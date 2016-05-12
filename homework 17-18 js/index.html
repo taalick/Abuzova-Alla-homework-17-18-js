@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  	<head>
+		  	<meta charset="UTF-8">
+		  	<title>Homework 11-12 js</title>
+		  
+		  	
+		  	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> 
+			<script src="js/dist/script.main.min.js"></script>
+    		<script src="js/src/script_carousel.js"></script>
+    		<link rel="stylesheet" href="css/dist/style.main.min.css">
+			
+	</head>
+  	<body>
+  		<!-- PRIFILE -->
+  		<script type="text/template" id="profile">
+			<div class="wraper">
+				<div class="head">
+					<tr><td>					
+						<h1 class="set_position_center"><%= FIO %></h1>
+						<div class="set_position_center divider_line">
+							<img src="img/photo.jpg" alt="фото Абузова Алла Амрулловна"><br>
+							<p class="set_position_left div_padding"><%= university %></p>
+						</div>
+						<div class="divider_line div_padding">
+							<p>Хочу учить фронтенд, потому что:</p>
+							<ul>
+								<li><%= youLearnTo.variant1 %></li>
+								<li><%= youLearnTo.variant2 %></li>					
+								<li><%= youLearnTo.variant3 %></li>					
+							</ul>
+						</div>				
+						<div class="div_padding">
+							<p>
+								Мой контактный телефон 
+								<br>
+								<%= phoneNumber %>
+							</p>					
+						</div>				
+						<div class="divider_line div_padding">
+							<p>Мой профиль в контакте</p>					
+							<p><a href="<%= profileVKontakte %>"><%= profileVKontakte %></a></p>
+						</div>
+						<div class="div_padding"><p>Мой фидбек:</p></div>
+						<div class="div_padding"><p><%= fidbek.variant1 %></p></div>	
+
+
+				<!-- CAROUSEL -->
+
+						<div class="div_padding"><%= fidbek.variant2 %></div>
+				  		<div class="carousel-arrow-left div_margin"><span>Влево</span></div>
+				  		<div class="carousel-hider">
+						  	<ul class="carousel-list">
+								<li class="carousel-element"><img src="img/img1.jpg"><p><%= imagesName.imageName1 %></p></li>
+								<li class="carousel-element"><img src="img/img2.jpg"><p><%= imagesName.imageName2 %></p></li>
+								<li class="carousel-element"><img src="img/img3.jpg"><p><%= imagesName.imageName3 %></p></li>
+								<li class="carousel-element"><img src="img/img4.jpg"><p><%= imagesName.imageName4 %></p></li>
+								<li class="carousel-element"><img src="img/img5.jpg"><p><%= imagesName.imageName5 %></p></li>
+								<li class="carousel-element"><img src="img/img6.jpg"><p><%= imagesName.imageName6 %></p></li>
+								<li class="carousel-element"><img src="img/img7.jpg"><p><%= imagesName.imageName7 %></p></li>
+								<li class="carousel-element"><img src="img/img8.jpg"><p><%= imagesName.imageName8 %></p></li>
+								<li class="carousel-element"><img src="img/img9.jpg"><p><%= imagesName.imageName9 %></p></li>
+								<li class="carousel-element"><img src="img/img10.jpg"><p><%= imagesName.imageName10 %></p></li>
+								<li class="carousel-element"><img src="img/img11.jpg"><p><%= imagesName.imageName11 %></p></li>
+								<li class="carousel-element"><img src="img/img12.jpg"><p><%= imagesName.imageName12 %></p></li>
+							</ul>
+				  		</div>
+				  		<div class="carousel-arrow-right"><span>Вправо</span></div>
+
+  				<!-- END CAROUSEL -->
+
+
+					</tr></td>
+				</div>
+			</div>
+		</script>
+		<!-- END PRIFILE -->
+  	</body>
+</html>
